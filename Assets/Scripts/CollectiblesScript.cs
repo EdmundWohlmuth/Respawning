@@ -13,11 +13,6 @@ public class CollectiblesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.Rotate(0, 45, 45);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-       
+        this.gameObject.transform.Rotate(new Vector3(0, 45, 45) * Time.deltaTime);
     }
 }
